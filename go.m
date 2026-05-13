@@ -2,7 +2,7 @@ clear all;
 
 global I invI
 
-Ixy = Iyz = Ixz = 0.;
+Ixy = 0.; Iyz = 0.; Ixz = 0.;
 m = 1.; R = 0.5;
 Ixx = 0.376e-06; % kg.m^2
 Iyy = 0.113e-06; % kg.m^2
