@@ -14,10 +14,10 @@ I = [
     ];
 invI = inv(I); % version cross product
 
-% Initial angular velocity mostly around intermediate axis
-w0 = [5,0.,1]'*pi/30.;
+% Initial angular velocity (mostly around intermediate axis)
+w0 = [5,0.,1]'*pi/30.; % RPM to 1/s
 % Initial quaternion q = [q0 q1 q2 q3]'
-q0 = [1,0,0,0]';
+q0 = [1,0,0,0]'; % Upright stance
 % Initial state
 x0 = [w0;q0];
 
