@@ -48,12 +48,12 @@ hold on;
 title('Tennis Racket Theorem (Quaternion Integration)');
 
 % Matlab
-%TR0 = stlread(fileName);
-%verts = TR0.Points;
-%faces = TR0.ConnectivityList;
+TR0 = stlread(fileName);
+verts = TR0.Points;
+faces = TR0.ConnectivityList;
 
 % GNU Octave
-[verts, faces, color] = stlread(fileName);
+%[verts, faces, color] = stlreadOctave(fileName);
 
 p = patch('Vertices',verts,...
           'Faces',faces,...
