@@ -8,7 +8,7 @@
 
 
 
-function [ ] = stlview(varargin)
+function [ ] = stlviewOctave(varargin)
 % {{{
 % This function uses patch() and the stlread()
 % function to view .STL data.
