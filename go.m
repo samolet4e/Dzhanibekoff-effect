@@ -3,7 +3,7 @@ clear all;
 global I invI
 
 Ixy = 0.; Iyz = 0.; Ixz = 0.;
-m = 1.; R = 0.5;
+% m = 1.; R = 0.5;
 Ixx = 0.376e-06; % kg.m^2
 Iyy = 0.113e-06; % kg.m^2
 Izz = 0.419e-06; % kg.m^2
@@ -12,7 +12,7 @@ I = [
     [-Ixy,Iyy,-Iyz];
     [-Ixz,-Iyz,Izz]
     ];
-invI = inv(I); % version cross product
+invI = inv(I);
 
 % Initial angular velocity (mostly around intermediate axis)
 w0 = [5,0.,1]'*pi/30.; % RPM to 1/s
