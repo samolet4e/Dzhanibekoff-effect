@@ -1,6 +1,10 @@
 function [y] = show(fileName,t,x)
 
-global I1 I2 I3
+global I
+
+I1 = I(1,1);
+I2 = I(2,2);
+I3 = I(3,3);
 
 % Extract states
 w = x(:,1:3);
