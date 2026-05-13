@@ -28,7 +28,7 @@ H = sqrt( ...
     (I3*w(:,3)).^2 );
 
 % 3D Animation
-figure(1,'Color','w');
+figure('Color','w');
 clf('reset');
 
 axis equal;
@@ -83,7 +83,7 @@ for k = 1:1:length(t)
 end
 
 % Conserved Quantities
-figure(2,'Color','w');
+figure('Color','w');
 
 subplot(2,1,1)
 plot(t,T,'LineWidth',2);
@@ -102,7 +102,7 @@ title('Conserved Angular Momentum Magnitude');
 grid on;
 
 % Energy Ellipsoid in Angular Velocity Space
-figure(3,'Color','w');
+figure('Color','w');
 
 hold on;
 grid on;
@@ -145,7 +145,7 @@ plot3(w(end,1),w(end,2),w(end,3),...
 view(3);
 
 % Angular Velocity Components
-figure(4,'Color','w');
+figure('Color','w');
 
 plot(t,w(:,1),'r','LineWidth',2); hold on;
 plot(t,w(:,2),'g','LineWidth',2);
